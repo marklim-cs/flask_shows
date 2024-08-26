@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <ul>
+        {% for show in shows %}
+        <li>{{ show[1] }} - {{ show[3] }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
